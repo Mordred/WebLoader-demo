@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="robots" content="{$robots}" n:ifset="$robots">
+
+	<title>{block title|striptags}{/block} | WebLoader Demo</title>
+
+	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+
+	{control css 'bootstrap/bootstrap'}
+	{control css}
+</head>
+
+<body>
+
+	<div class="container">
+		<!-- Navbar
+		================================================== -->
+		<div class="navbar navbar-inverse">
+		  <div class="navbar-inner">
+			<div class="container">
+			  <a class="brand" n:href="Homepage:">WebLoader Demo</a>
+			  <div class="nav-collapse collapse">
+				<ul class="nav">
+				  <li>
+					<a n:href="Homepage:">Home</a>
+				  </li>
+				  <li>
+					<a href="http://blog.jantosko.sk">Blog</a>
+				  </li>
+				  <li>
+					<a n:href="Demo:">JS per presenter</a>
+				  </li>
+				  <li>
+					<a n:href="Demo:demo">JS per action</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="hero-unit">
+			<h1>WebLoader Demo</h1>
+			<p>
+				Demo, ktoré má ukázať, ako automatické načítavanie JS a CSS podľa
+				presenteru a akcie. Naviac je z kódu možné zistiť
+				ako ľahko sa dá pridať CoffeeScript a LESS.
+			</p>
+		</div>
+
+		{include #content}
+	</div>
+
+	{control js 'jquery', 'netteForms', 'bootstrap/bootstrap-transition',
+		'bootstrap/bootstrap-alert', 'bootstrap/bootstrap-button',
+		'bootstrap/bootstrap-carousel', 'bootstrap/bootstrap-collapse',
+		'bootstrap/bootstrap-dropdown', 'bootstrap/bootstrap-modal',
+		'bootstrap/bootstrap-scrollspy', 'bootstrap/bootstrap-tab',
+		'bootstrap/bootstrap-tooltip', 'bootstrap/bootstrap-popover',
+		'bootstrap/bootstrap-typeahead', 'bootstrap/bootstrap-affix'}
+	{control js}
+</body>
+</html>

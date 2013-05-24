@@ -1,0 +1,33 @@
+{
+	"name": "Mordred/webloader-demo",
+	"description": "This is a demo application for my blog.",
+	"homepage": "http://blog.jantosko.sk",
+	"type": "project",
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Martin Jantošovič",
+			"homepage": "http://blog.jantosko.sk"
+		},
+		{
+			"name": "Nette Community",
+			"homepage": "http://nette.org/contributors"
+		}
+	],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/Mordred/WebLoader"
+		}
+	],
+	"config": {
+		"vendor-dir": "libs"
+	},
+	"require": {
+		"php": ">=5.4",
+		"nette/nette": "2.0.*",
+		"JanMarek/WebLoader": "dev-master",
+		"coffeescript/coffeescript": "dev-master",
+		"leafo/lessphp": "dev-master"
+	}
+}
