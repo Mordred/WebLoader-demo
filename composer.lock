@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mordred/WebLoader.git",
-                "reference": "dd262d196619e56956aaf93b705ebe7cf0d09a66"
+                "reference": "2355c669b5c3fbb5e91c3fcbeff6f236f7e46021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mordred/WebLoader/zipball/dd262d196619e56956aaf93b705ebe7cf0d09a66",
-                "reference": "dd262d196619e56956aaf93b705ebe7cf0d09a66",
+                "url": "https://api.github.com/repos/Mordred/WebLoader/zipball/2355c669b5c3fbb5e91c3fcbeff6f236f7e46021",
+                "reference": "2355c669b5c3fbb5e91c3fcbeff6f236f7e46021",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
             "support": {
                 "source": "https://github.com/Mordred/WebLoader/tree/master"
             },
-            "time": "2013-05-10 09:49:33"
+            "time": "2013-05-24 08:06:52"
         },
         {
             "name": "coffeescript/coffeescript",
